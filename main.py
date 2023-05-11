@@ -41,5 +41,7 @@ async def main(file: UploadFile = File(...)):
     return {"file_name": file.filename}
 
 
+bb = 33
+
 if __name__ == "__main__":
     uvicorn.run('main:app', host=str(os.getenv('HOST')), port=int(os.getenv('PORT')), reload=True)
