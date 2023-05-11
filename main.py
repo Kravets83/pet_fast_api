@@ -40,6 +40,8 @@ async def main(file: UploadFile = File(...)):
         shutil.copyfileobj(file.file, temp_data)
     return {"file_name": file.filename}
 
+dev = 'sssss'
+
 
 bb = 33
 
